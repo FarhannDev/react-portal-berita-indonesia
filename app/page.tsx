@@ -1,21 +1,5 @@
 import Image from 'next/image';
 import styles from './page.module.css';
-import { useState } from 'react';
-
-interface News {
-  title: string;
-  link: string;
-  contentSnippet: string;
-  isoDate: string;
-  image: {
-    small: string;
-    large: string;
-  };
-}
-
-interface ResponseData {
-  data: News[];
-}
 
 export default async function Home() {
   return (
